@@ -1,0 +1,8 @@
+<h1>Uploads#index</h1>
+<% @uploads.each do |upload| %>
+	<div>
+		<%= link_to upload.name, upload.url %>
+	</div>
+<% end %>
+</br>
+<%= link_to 'New File',  new_upload_path %>
